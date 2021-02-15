@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <div class="heading">available balance as on <span class="display__date">28 january 2021</span></div>
+            <div class="top__balance__label"></div>
+            <div class="top__income__label">
+                <div class="income__value">income <span class="total__income"></span></div>
+            </div>
+            <div class="top__expense__label">
+                <div class="expense__value">expense <span class="total__expense"></span></div>
+                <div class="top__expense__percentage">-</div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="selection">
+                <select class="select">
+                    <option value="inc">+</option>
+                    <option value="exp">-</option>
+                </select>
+            </div>
+
+            <div class="inputs">
+                <input type="text" placeholder="add description" class="input__description">
+                <input type="text" placeholder="amount" class="input__amount">
+            </div>
+
+            <div class="add">
+                <button class="add__btn"><i class="fa fa-check-circle" aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+
+        <div class="bottom">
+            <div class="incomes__and__expenses">
+                <div class="income">
+                    <div class="income__heading">incomes</div>
+     
+                  <div class="income__labels" >
+                      <!--
+                         <div class="income__label">
+                            <div class="income__description">salary</div>
+                            <div class="income__date">26/08/2021</div>
+                            <div class="income__value">3000</div>
+                            <div class="icons">
+                                <div class="edit__icon"><i class="edit fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                                <div class="delete__icon"><i class="delete fa fa-trash-o" aria-hidden="true"></i></div>
+                           
+                        </div>
+                        </div>
+                        
+
+                        <div class="income__label">
+                            <div class="income__description">salary</div>
+                            <div class="income__date">26/08/2021</div>
+                            <div class="income__value">3000</div>
+                            <div class="icons">
+                                <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                                <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                           
+                        </div>
+                        </div>
+
+                        <div class="income__label">
+                            <div class="income__description">salary</div>
+                            <div class="income__date">26/08/2021</div>
+                            <div class="income__value">3000</div>
+                            <div class="icons">
+                                <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                                <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                           
+                        </div>
+                        </div>
+
+                        <div class="income__label">
+                            <div class="income__description">salary</div>
+                            <div class="income__date">26/08/2021</div>
+                            <div class="income__value">3000</div>
+                            <div class="icons">
+                                <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                                <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                           
+                        </div>
+                        </div>
+
+                        <div class="income__label">
+                            <div class="income__description">salary</div>
+                            <div class="income__date">26/08/2021</div>
+                            <div class="income__value">3000</div>
+                            <div class="icons">
+                                <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                                <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                           
+                        </div>
+                        </div>
+
+                        <div class="income__label">
+                            <div class="income__description">salary</div>
+                            <div class="income__date">26/08/2021</div>
+                            <div class="income__value">3000</div>
+                            <div class="icons">
+                                <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                                <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                           
+                        </div>
+                        </div>
+                      
+
+
+                        <div class="income__label">
+                            <div class="income__description">salary</div>
+                            <div class="income__date">26/08/2021</div>
+                            <div class="income__value">3000</div>
+                            <div class="icons">
+                                <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                                <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                           
+                        </div>
+                        </div>
+
+
+                        <div class="income__label">
+                            <div class="income__description">salary</div>
+                            <div class="income__date">26/08/2021</div>
+                            <div class="income__value">3000</div>
+                            <div class="icons">
+                                <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                                <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                           
+                        </div>
+                        </div>
+
+
+                        <div class="income__label">
+                            <div class="income__description">salary</div>
+                            <div class="income__date">26/08/2021</div>
+                            <div class="income__value">3000</div>
+                            <div class="icons">
+                                <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                                <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                           
+                        </div>
+                        </div>
+
+
+                        <div class="income__label">
+                            <div class="income__description">salary</div>
+                            <div class="income__date">26/08/2021</div>
+                            <div class="income__value">3000</div>
+                            <div class="icons">
+                                <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                                <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                           
+                        </div>
+                        </div> -->
+                    </div>
+                </div>
+     
+                <div class="expense">
+                 <div class="expense__heading">expenses</div>
+     
+                 <div class="expense__labels">
+                     <!-- <div class="expense__label">
+                         <div class="expense__description">salary</div>
+                         <div class="expense__date">26/08/2021</div>
+                         <div class="expense__value">3000</div>
+                         <div class="expense__percentage">25%</div>
+                         <div class="icons">
+                             <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                             <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                     </div> 
+                </div>
+
+
+                <div class="expense__label">
+                    <div class="expense__description">salary</div>
+                    <div class="expense__date">26/08/2021</div>
+                    <div class="expense__value">3000</div>
+                    <div class="expense__percentage">25%</div>
+                    <div class="icons">
+                        <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                        <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                </div> 
+           </div>
+
+
+
+           <div class="expense__label">
+            <div class="expense__description">salary</div>
+            <div class="expense__date">26/08/2021</div>
+            <div class="expense__value">3000</div>
+            <div class="expense__percentage">25%</div>
+            <div class="icons">
+                <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+        </div> 
+   </div>
+
+
+   <div class="expense__label">
+    <div class="expense__description">salary</div>
+    <div class="expense__date">26/08/2021</div>
+    <div class="expense__value">3000</div>
+    <div class="expense__percentage">25%</div>
+    <div class="icons">
+        <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+        <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+</div> 
+</div>
+
+<div class="expense__label">
+    <div class="expense__description">salary</div>
+    <div class="expense__date">26/08/2021</div>
+    <div class="expense__value">3000</div>
+    <div class="expense__percentage">25%</div>
+    <div class="icons">
+        <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+        <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+</div> 
+</div>
+
+<div class="expense__label">
+    <div class="expense__description">salary</div>
+    <div class="expense__date">26/08/2021</div>
+    <div class="expense__value">3000</div>
+    <div class="expense__percentage">25%</div>
+    <div class="icons">
+        <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+        <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+</div> 
+</div>
+
+<div class="expense__label">
+    <div class="expense__description">salary</div>
+    <div class="expense__date">26/08/2021</div>
+    <div class="expense__value">3000</div>
+    <div class="expense__percentage">25%</div>
+    <div class="icons">
+        <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+        <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+</div> 
+</div>
+
+<div class="expense__label">
+    <div class="expense__description">salary</div>
+    <div class="expense__date">26/08/2021</div>
+    <div class="expense__value">3000</div>
+    <div class="expense__percentage">25%</div>
+    <div class="icons">
+        <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+        <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+</div> 
+</div>
+
+
+   <div class="expense__label">
+    <div class="expense__description">salary</div>
+    <div class="expense__date">26/08/2021</div>
+    <div class="expense__value">3000</div>
+    <div class="expense__percentage">25%</div>
+    <div class="icons">
+        <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+        <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+</div> 
+</div>
+
+
+
+<div class="expense__label">
+    <div class="expense__description">salary</div>
+    <div class="expense__date">26/08/2021</div>
+    <div class="expense__value">3000</div>
+    <div class="expense__percentage">25%</div>
+    <div class="icons">
+        <div class="edit__icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+        <div class="delete__icon"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+</div> 
+</div> -->
+
+</div>
+     
+            </div>
+          
+            </div>
+
+
+           <div class="sort__operation">
+               <button class="sort__btn">sort <i class="fa fa-long-arrow-down" aria-hidden="true"></i></button>
+           </div>
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>

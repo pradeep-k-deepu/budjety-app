@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Potta One', cursive;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 6fr 2fr 12fr;
+}
+
+.top,.middle,.bottom{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.top{
+/* background-color: red; */
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+min-height: 20rem;
+background-image: url('./mm.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+
+}
+
+.heading{
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+   
+
+}
+
+.top__balance__label{
+   font-size: 3rem;
+}
+
+.top__income__label,.top__expense__label{
+width: 34rem;
+height: 4rem;
+/* background-color: blue; */
+/* display: flex; */
+align-items: center;
+font-size: 1.5rem;
+text-transform: uppercase;
+padding: 1rem 0rem;
+letter-spacing: 1px;
+}
+
+.top__income__label{
+    background-color: #2ecc71;
+}
+.top__expense__label{
+    background-color: #eb2f06;
+}
+
+.top__income__label span{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    font-size: 1.7rem;
+
+}
+
+.top__expense__label span{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 2rem;
+
+}
+
+.top__expense__percentage{
+    line-height: auto;
+    width: auto;
+    padding: .2rem;
+    background-color: rgb(253, 47, 65);
+    border-radius: .8rem;
+    position: absolute;
+    top: 81%;
+    left: 60%;
+    font-size: 1.2rem;
+}
+
+
+.middle{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 6rem;
+   background: #edf1ec;
+}
+
+
+.selection{
+margin-right: 4rem;
+}
+
+.input__description,.input__amount{
+    height: 3rem;
+    width: 30rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.input__amount{
+    width: 15rem;
+    margin-left: 2rem;
+}
+
+.input__description::placeholder,.input__amount::placeholder{
+    font-size: 1.3rem;
+}
+
+.add button{
+    margin-left: 3rem;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+
+.bottom{
+    
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+    min-height: 43rem;
+    background-image: url('./mm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.income__labels,.expense__labels{
+width: 100%;
+/* background-color: ; */
+overflow-y: scroll;
+overflow-x: hidden;
+
+
+
+}
+
+.income__labels::-webkit-scrollbar,.expense__labels::-webkit-scrollbar{
+    width: 0;
+}
+
+
+ .incomes__and__expenses{
+    min-height: 40rem;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    
+}
+
+
+
+.income,.expense{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+ .income__heading,.expense__heading{
+    margin: 2rem auto;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #2ecc71;
+}
+.expense__heading{
+    color: #eb2f06;
+}
+
+
+.income__label,.expense__label{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+    width: 46rem;
+    background-color: #f5f6fa;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1px;
+    position: relative;
+    border-radius: 1rem;
+    transition: .15s transform ease-in;
+
+}
+
+.income__label:hover,.expense__label:hover{
+    transform: translateY(-3px);
+}
+
+.income__label{
+border : 2px solid  #2ecc71;
+}
+
+.expense__label{
+   
+    border:2px solid #eb2f06;
+}
+
+
+
+.income__description,.expense__description{
+font-size: 1.5rem;
+text-transform: capitalize;
+margin-left: 2rem;
+
+}
+.income__date,.expense__date{
+    font-size: 1.3rem;
+    margin-left: 5rem;
+
+}
+.income__value,.expense__value{
+    font-size: 1.5rem;
+    margin-left: 5rem;
+
+}
+
+
+
+.icons{
+    display: flex;
+    visibility: hidden;
+    
+}
+
+.income__label:hover > .icons,.expense__label:hover > .icons{
+    cursor: pointer;
+    visibility: visible;
+}
+
+.income__label:hover{
+    cursor: pointer;
+}
+
+.expense__label:hover{
+    cursor: pointer;
+}
+
+.edit__icon{
+    margin-right: 2rem;
+
+}
+
+.delete__icon,.edit__icon{
+    font-size: 2rem;
+}
+
+
+
+.expense__percentage{
+    line-height: auto;
+    width: auto;
+    padding: .7rem;
+    background-color: rgb(253, 47, 65);
+    border-radius: .8rem;
+    margin-left: 1rem;
+    color: white;
+    font-size: .9rem;
+}
+
+
+.sort__operation{
+    min-height: 2rem;
+    width: 100%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort__operation button{
+    height: 2.5rem;
+    width: 8rem;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    font-weight: bold;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+}
+
+.sort__operation button:hover{
+    cursor: pointer;
+}
